@@ -1,0 +1,21 @@
+/**{
+	outline: 1px solid red;
+}*/
+
+.diff-fondo{
+	background: url(../parrotpattern.jpg);
+
+}
+.container-fluid{
+	background: rgba(79, 79, 79, 0.4);
+	padding-top: 100px;
+	height: 650px;
+}
+h1, h4, label{
+	font-family: 'Fredoka+One',cursive;
+	color: red;
+	text-shadow: 1px 1px black;
+}
+p{
+	color: white;
+}

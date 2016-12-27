@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<title>ParrotTrouble</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+<div class="parrot-fondo">
+	<div class="oscurito">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h1 class="text-center well">Averigua si estamos en problemas con el loro</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					 	<label class="well" for="número">Ingresa un número entero:</label>
+					 	<input type="email" class="form-control" id="numer1" placeholder="0" onchange="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="well" for="número">¿El número ingresado es mayor que 21?</label>
+						<select class="form-control" id="">
+							<option value="1">Si</option>
+							<option value="2">No</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<button onclick="calcular()" class="center-block btn btn-info">Calcular</button>
+					<div>
+						<h2 class="center-block" role="alert" id="salida"></h2>				
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+</body>
+<script src="Js/main.js"></script>
+</html>
