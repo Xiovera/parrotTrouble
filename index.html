@@ -23,21 +23,24 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
-					 	<label class="well" for="número">Ingresa un número entero:</label>
-					 	<input type="email" class="form-control" id="numer1" placeholder="0" onchange="">
+					 	<label  class="well" for="hora">¿Qué hora es?</label>
+						<select class="form-control" id="hora">
+							<option value="1">entre las 7:00 am y 9:00 pm</option>
+							<option value="2">fuera de las 7:00 am y 9:00 pm</option>
+						</select>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label class="well" for="número">¿El número ingresado es mayor que 21?</label>
-						<select class="form-control" id="">
+						<label class="well" for="talking">¿El loro habla?</label>
+						<select class="form-control" id="talking">
 							<option value="1">Si</option>
 							<option value="2">No</option>
 						</select>
 					</div>
 				</div>
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<button onclick="calcular()" class="center-block btn btn-info">Calcular</button>
+					<button onclick="calcular()" class="center-block btn btn-info">Averiguar</button>
 					<div>
 						<h2 class="center-block" role="alert" id="salida"></h2>				
 					</div>
@@ -45,6 +48,7 @@
 			</div>
 		</div>		
 	</div>
+	<a class="well" href="https://github.com/Xiovera/Diff21">Link repo</a>
 </div>
 </body>
 <script src="Js/main.js"></script>
