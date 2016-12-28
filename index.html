@@ -16,39 +16,40 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<h1 class="text-center well">Averigua si estamos en problemas con el loro</h1>
+					<h1 class="text-center well">Averigua si estamos en problemas con el loro hablador</h1>
 					<hr>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
-					 	<label  class="well" for="hora">¿Qué hora es?</label>
-						<select class="form-control" id="hora">
-							<option value="1">entre las 7:00 am y 9:00 pm</option>
-							<option value="2">fuera de las 7:00 am y 9:00 pm</option>
-						</select>
+					 	<label class="well center-block" for="hora">Hora aproximada entre 00 y 23 hrs</label>
+					 	<input type="text" class="form-control" id="hora" placeholder="valores entre 0-23">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label class="well" for="talking">¿El loro habla?</label>
+						<label class="well center-block" for="talking">¿El loro está hablando?</label>
 						<select class="form-control" id="talking">
 							<option value="1">Si</option>
 							<option value="2">No</option>
 						</select>
 					</div>
 				</div>
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<button onclick="calcular()" class="center-block btn btn-info">Averiguar</button>
-					<div>
-						<h2 class="center-block" role="alert" id="salida"></h2>				
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="center-block img-responsive" id="img"></div>
+					<div class="center-block well">
+						<h4 class="text-center">Averigua si estamos en problemas</h4>
+						<h1 class="text-center" id="salida"></h1>
+						<button onclick="evaluar()" class="center-block btn btn-info">Evaluar</button>
 					</div>
 				</div>
 			</div>
+			<a class="btn btn-warning" href="https://github.com/Xiovera/parrotTrouble">Link repo</a>
 		</div>		
 	</div>
-	<a class="well" href="https://github.com/Xiovera/Diff21">Link repo</a>
 </div>
 </body>
 <script src="Js/main.js"></script>

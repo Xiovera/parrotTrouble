@@ -1,31 +1,27 @@
-function calcular()
+var hora = document.getElementById("hora");
+var pSalida = document.getElementById("salida");
+var img = document.getElementById("img");
+
+function evaluar()
 {	
-	var numero = document.getElementById("numer1").value;
-	var diferencia = document.getElementById("diff").value;
-	
+	var talking = document.getElementById("talking").value;
+	var parrot = false;
+	var phora = hora.value;
 
-
-	if(numer1>21)
-	{	
-		document.getElementById("salida").innerHTML = "Muy bien Squad!";
-	}else{
-		document.getElementById("salida").innerHTML = "Pueden hacerlo mejor";
+	if(talking == "1"){
+		parrot = true;
 	}
-
-}
-
-
-
-function evaluar ()
-{
-	var aSmile = document.getElementById("mono_a").checked;
-	var bSmile = document.getElementById("mono_b").checked;
-	var salida = document.getElementById("salida");
-
-	if(aSmile == bSmile)
-	{
-		salida.innerHTML = "1";
+	if (parrot) {
+		if (phora>=7 && phora<=20) {
+			pSalida.innerHTML = "No";
+			img.innerHTML = '<img src="../img/lorotalking.png" alt="">';
+		}
+		else{
+			pSalida.innerHTML = "Si";
+			img.innerHTML = '<img src="../img/nottalking.png" alt="">'
+		}
 	}else{
-		salida.innerHTML = "0";
+		pSalida.innerHTML = "No";
+		img.innerHTML = '';
 	}
 }
